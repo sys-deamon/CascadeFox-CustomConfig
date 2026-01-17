@@ -1,0 +1,25 @@
+/* ================= FIREFOX HOME / NEW TAB QUOTE ================= */
+
+@-moz-document url("about:newtab"), url("about:home") {
+
+  body::after {
+    content: "Goon\AHarder";
+    white-space: pre-line;
+
+    position: fixed;
+    left: 60%;                 /* center, but pushed to the right */
+    top: 50%;
+    transform: translate(-10%, -50%);
+
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;          /* Bold */
+    font-size: 150px;
+    line-height: 1.1;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+}

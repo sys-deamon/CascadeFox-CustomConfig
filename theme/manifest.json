@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "idk-the-author-sry-theme",
+  "theme": {
+    "images": {
+      "additional_backgrounds": [
+        "images/bg-020-48c286b34e53380d46803c2e5603a5b2.svg"
+      ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [
+        "top"
+      ],
+      "additional_backgrounds_tiling": [
+        "repeat"
+      ]
+    },
+    "colors": {
+      "toolbar": "rgb(27, 27, 27)",
+      "toolbar_text": "rgb(211, 211, 211)",
+      "frame": "rgb(3, 3, 3)",
+      "tab_background_text": "rgb(211, 211, 211)",
+      "toolbar_field": "rgb(49, 49, 49)",
+      "toolbar_field_text": "rgb(41, 230, 255)",
+      "tab_line": "rgb(44, 163, 175)",
+      "popup": "rgb(27, 27, 27)",
+      "popup_text": "rgb(211, 211, 211)",
+      "tab_loading": "rgb(44, 163, 175)"
+    }
+  }
+}

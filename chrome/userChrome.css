@@ -1,0 +1,98 @@
+/*==============================================================================================*
+
+  +-----+-----+-----+-----+-----+-----+-----+
+  | █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
+  | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
+  +-----+-----+-----+-----+-----+-----+-----+
+
+  Description:    Cascade is a minimalistic and keyboard centered custom theme removing a lot of the
+                  subjective clutter default Firefox comes with. This theme is highly inspired by the
+                  stylistic choices of SimpleFox by Miguel Ávila. 🦊
+                  https://github.com/migueravila/SimpleFox
+
+  Author:         Andreas Grafen
+                  (https://andreas.grafen.info)
+
+  Repository:     https://github.com/andreasgrafen/cascade
+                  Thank you Nick, Abdallah, Benyamin and Wael for all the great suggestions for improvements! ♡
+
+                  Nick:     https://github.com/nicksundermeyer
+                  Abdallah: https://github.com/HeiWiper
+                  Benyamin: https://github.com/benyaminl
+                  Wael:     https://github.com/wael444
+
+                  If you're looking for a **mouse-friendly** clone please check out Waterfall.
+                  https://github.com/crambaud/waterfall
+
+*==============================================================================================*/
+
+@import "includes/cascade-config.css";
+@import "includes/cascade-colours.css";
+
+@import "includes/cascade-layout.css";
+/* @import "includes/cascade-responsive.css"; */
+@import "includes/cascade-floating-panel.css";
+
+@import "includes/cascade-nav-bar.css";
+@import "includes/cascade-tabs.css";
+
+/* === Two-row layout override === */
+
+#navigator-toolbox {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#TabsToolbar {
+  order: 1 !important;
+}
+
+#nav-bar {
+  order: 2 !important;
+  justify-content: center !important;
+}
+
+#PersonalToolbar {
+  order: 3 !important;
+}
+
+/* Centered URL bar */
+#nav-bar {
+  padding: 6px 0 !important;
+}
+
+#urlbar-container {
+  max-width: 600px;      /* ← change width here */
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+#urlbar {
+  min-height: 36px;      /* ← change height here */
+}
+
+
+#browser,
+#appcontent {
+  margin-top: 0 !important;
+}
+
+/* === Restore Firefox menu button === */
+
+#PanelUI-menu-button {
+  display: -moz-box !important;
+  padding: 4px !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* === Always show tab close (X) button === */
+
+:root {
+  --show-tab-close-button: -moz-inline-block !important;
+  --show-tab-close-button-hover: -moz-inline-block !important;
+}
+
