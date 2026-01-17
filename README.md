@@ -10,7 +10,8 @@ The files contains my custom **Firefox** config of [Cascade Theme](https://githu
 - Some quote on the homepage that you can modify
 
 # Showcase
-![[pasted.png]]
+![Screenshot](pasted.png)
+
 # Customization
 ## Homepage Quote
 You can customize everything related to the home-page quote (font, size, weight and position) in the `userContent.css` file.
